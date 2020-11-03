@@ -1,1 +1,9 @@
-学习笔记
+说明
+
+1、我使用OKHttp代替了HttpClient实现了最基础的路由，在outbound包的OkHttpOutboundHandler类中。
+
+、HttpInboundFilter类实现了老师的接口。在header中添加了一个key为nio，value为peihaitao的值。
+
+3、HttpRouter实现了老师给的接口。简单设置了随机取从三个代理地址中取出一个去访问的路由。
+
+4、路由的初始化和数据设置在HttpInboundHandler里，不知道这样设置合不合理？
