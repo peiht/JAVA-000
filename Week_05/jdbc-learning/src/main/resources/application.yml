@@ -1,0 +1,8 @@
+
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    username: duocaitou
+    password: J8UfRvLEiUPz
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.0.20.202:3306/dct?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false&zeroDateTimeBehavior=convertToNull
