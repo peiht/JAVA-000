@@ -4,7 +4,7 @@ AOP + springboot + mybatisplus + hirariCP
 
 效果：
 
-![image-20201202164157762](/Users/hitopei/Documents/GitHub/JAVA-000/Week_07/aop.png)
+![image-20201202164157762](https://github.com/peiht/JAVA-000/tree/main/Week_07/aop.png)
 
 2、主要代码：
 

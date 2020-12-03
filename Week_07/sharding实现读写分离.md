@@ -4,7 +4,7 @@
 
 结果图：
 
-![sharding](/Users/hitopei/Documents/GitHub/JAVA-000/Week_07/sharding.png)
+![sharding](https://github.com/peiht/JAVA-000/tree/main/Week_07/sharding.png)
 
 新增操作走的是master 查找走的是slave
 
