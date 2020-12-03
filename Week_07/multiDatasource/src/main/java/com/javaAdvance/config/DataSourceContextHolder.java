@@ -16,4 +16,8 @@ public class DataSourceContextHolder {
     public static String getDataSource() {
         return local.get();
     }
+
+    public static void remove() {
+        local.remove();
+    }
 }
