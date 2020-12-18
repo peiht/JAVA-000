@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.javaAdvance.account.api.repository.mysql.mapper.AccountFreezeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.javaAdvance.account.api.repository.mysql.domain.AccountFreeze">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="freeze_rmb" property="freezeRmb" />
+        <result column="freeze_usd" property="freezeUsd" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, user_id, freeze_rmb, freeze_usd, create_time, update_time
+    </sql>
+
+    <update id="updateFreezeRMB">
+        update account_freeze set freeze_rmb = freeze_rmb + #{amount} where user_id = #{userId}
+    </update>
+
+    <update id="unFreezeRMB">
+        update account_freeze set freeze_rmb = freeze_rmb - #{amount} where user_id = #{userId} and freeze_rmb > 0
+    </update>
+</mapper>
