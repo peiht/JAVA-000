@@ -1,0 +1,10 @@
+server:
+  port: 8081
+  
+  profiles:
+    active: true
+
+zookeeper:
+  host: localhost
+  port: 2181
+  namespace: rpcfx
