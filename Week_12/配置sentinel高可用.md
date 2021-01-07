@@ -31,7 +31,7 @@ root@65291a775ed1:/data# redis-sentinel /usr/local/etc/redis/sentinel.conf
 
 查看日志信息
 
-![](/Users/hitopei/Documents/GitHub/JAVA-000/Week_12/sentinel输出信息.png)
+![](https://github.com/peiht/JAVA-000/tree/main/Week_12/sentinel输出信息.png)
 
 可以看到已经检测到了master 172.17.0.3和 两个slave 172.17.0.4和172.17.0.5。
 
@@ -88,7 +88,7 @@ repl_backlog_histlen:364292
 
 等大概30s之后，查看sentinel的日志，发现检测到主库down掉之后，开始选举新的master，新的master是172.17.0.4这个服务。
 
-![](/Users/hitopei/Documents/GitHub/JAVA-000/Week_12/sentinel选举日志信息.png)
+![](https://github.com/peiht/JAVA-000/tree/main/Week_12/sentinel选举日志信息.png)
 
 然后登上172.17.0.4 这个服务查看备份信息，当前库已经是master了。验证完毕
 
