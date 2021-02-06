@@ -24,7 +24,7 @@ NIO重要的框架是Netty，Netty简化了原生NIO的一些操作，封装了�
 
 并发主要是充分利用多核cpu的特性，将任务并行处理，增强系统处理的性能。在实际应用场景中，对于业务有着ACID等事务的需求，需要对代码进行相关的处理，另外对于在开发测试调试代码等过程中和平时的单线程开发也有着很大的不同。在实际的项目运行中也会充斥着死锁等问题，对于这些问题，除了知识感觉很多经验也是很必要的，比如打印日志分析相关问题。其实在学了数据库并发的相关知识后，作为和多线程并发一个对比来说，就比较好理解了，比如CopyOnWriteArrayList对应的mysql的事务隔离级别，作为对比思考，就没有那么难理解了。
 
-![](D:\code\GitHub\JAVA-000\summary\JavaConcurrency.png)
+![](https://github.com/peiht/JAVA-000/tree/main/summary/JavaConcurrency.png)
 
 4) Spring 和 ORM 等框架
 
